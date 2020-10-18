@@ -42,6 +42,7 @@ export default {
     login(){
       reqLogin(this.form).then(res=>{
        console.log("-----logininfo---");
+       console.log(res);
       //  vuex
         this.changeUserInfoAction(res.data.list)
         this.$router.push("/")
