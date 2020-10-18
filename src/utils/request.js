@@ -18,17 +18,17 @@ axios.interceptors.request.use(req => {
 
 
 //响应拦截
-axios.interceptors.response.use(res => {
-    console.group("---------------本次请求路径是:" + res.config.url)
-    console.log(res);
-    console.groupEnd()
-    //用户掉线了
-    if (res.data.msg == '登录已过期或访问权限受限') {
-        warningAlert(res.data.msg)
-        router.push("/login")
-    }
-    return res;
-})
+// axios.interceptors.response.use(res => {
+//     console.group("---------------本次请求路径是:" + res.config.url)
+//     console.log(res);
+//     console.groupEnd()
+//     //用户掉线了
+//     if (res.data.msg == '登录已过期或访问权限受限') {
+//         warningAlert(res.data.msg)
+//         router.push("/login")
+//     }
+//     return res;
+// })
 //添加
 export const reqMenuAdd = (params) => {
     return axios({

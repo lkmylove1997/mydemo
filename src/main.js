@@ -5,8 +5,7 @@ import App from './App'
 import router from './router'
 
 //1.assets 
-import "./assets/css/reset.css"
-
+// import "./assets/css/reset.css"
 
 //2.公共组件
 import "./components"
